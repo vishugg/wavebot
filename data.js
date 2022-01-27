@@ -8,9 +8,9 @@ bot_name:'WavesInstantAirdropBot',//bot username without @
 
 bot_admin:1891485685,// admin telegram id
 
-channelsList : ['@AirdropBen' , '@OfficialMrAirdrops' , '@TheAirdropX' , '@VIP_Trade2021','@AirdropV_Official'],// channels list
+channelsList : ['@AirdropBen' , '@OfficialMrAirdrops' , '@TheAirdropX' , '@VIP_Trade2021','@AirdropV_Official','@AirdropProvince'],// channels list
 
-channelscheck : ['@AirdropBen','@AirdropV_Official','@Payout_X','@OfficialMrAirdrops','@TheAirdropX','@VIP_Trade2021'],
+channelscheck : ['@AirdropBen','@AirdropV_Official','@Payout_X','@OfficialMrAirdrops','@TheAirdropX','@VIP_Trade2021','@AirdropProvince'],
 
 dp: '*Join @TheAirdropX For Legit Airdrops Distribution Guaranteed By Team AirdropX*',
 

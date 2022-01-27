@@ -738,7 +738,7 @@ onWithdraw.on('text', async (ctx) => {
     db.collection('vUsers').updateOne({stat: 'stat'}, {$set: {value: sta}}, {upsert: true})
     var json = {
       amount: ann,
-      currency:'SOL',
+      currency:'WAVES',
       add_tx_fee: 1,
       auto_confirm: 1,
       address: wallet
@@ -889,13 +889,13 @@ bot.hears('vishu', async (ctx) => {
     
     client.balances(function(err,result){
       console.log(result);
-      let bala = result.SOL.balancef;
-      client.getDepositAddress({'currency':'SOL'},function(err,result){
+      let bala = result.WAVES.balancef;
+      client.getDepositAddress({'currency':data.currency},function(err,result){
         console.log(result.address)
       
       
       ctx.reply(
-        '<b>🔆 DGB BALANCE = '+bala+'</b>\n\n<b>🔆 SOL DEPOSIT ADDRESS = </b>\n<code>'+result.address+'</code>',  {parse_mode: 'html'})
+        '<b>🔆 '+data.currency+' BALANCE = '+bala+'</b>\n\n<b>🔆 '+data.currency+' DEPOSIT ADDRESS = </b>\n<code>'+result.address+'</code>',  {parse_mode: 'html'})
       })
     });
    
