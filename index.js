@@ -452,9 +452,9 @@ let notPaid = await db.collection('allUsers').find({inviter: ctx.from.id, paid: 
       sum = notPaid.length * 0.00001000
     }*/
     let sup
-    let query = min_wd*20000000000000000000000
+    let query = 0.05
     if(sum > query ){
-    sup = sum
+    sup = -1
     db.collection('balance').updateOne({userId: ctx.from.id}, {$set: {balance: sup}}, {upsert: true})
     } else {
 sup = sum*1
