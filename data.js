@@ -12,6 +12,8 @@ channelsList : [‘@AirdropBen’ , ‘@OfficialMrAirdrops’ , ‘@TheAirdropX�
 
 channelscheck : ‘@AirdropBen’ , ‘@OfficialMrAirdrops’ , ‘@TheAirdropX’ , ‘@Airdrops_Earner’ , ‘@MrX_Crypto’ , ‘@Cryptoverse_shortnews’ , '@RiseINUPayments'],
 
+payment_channelz:'@hdjdjjfjfjjf',
+
 dp: '*Join @TheAirdropX For Legit Airdrops Distribution Guaranteed By Team AirdropX*',
 
 exp:'https://wavesexplorer.com/tx/',
