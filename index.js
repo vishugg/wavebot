@@ -736,47 +736,13 @@ onWithdraw.on('text', async (ctx) => {
           
     db.collection('balance').updateOne({userId: ctx.from.id}, {$set: {balance: rem, withdraw: ass}}, {upsert: true})
     db.collection('vUsers').updateOne({stat: 'stat'}, {$set: {value: sta}}, {upsert: true})
-    var json = {
-      amount: ann,
-      currency:'WAVES',
-      add_tx_fee: 1,
-      auto_confirm: 1,
-      address: wallet
-      }
-      
-      let wdp =  
-      client.createWithdrawal(json,function(err,result){
-          console.log(result)
-          ctx.replyWithMarkdown('*✅ Withdrawal Requested*\nYour payment is being processed automatically right now!\n\n*Secured Payment ID: *\n*'+result.id+'*')
-ctx.replyWithMarkdown(''+data.dp+'',{disable_web_page_preview: 'true'})
-      ;
-    
-          let status = result.status 
-    if(status==1){
-    let cpid = result.id
-    setTimeout(getwd, 30000, cpid)
-    }
-    async function getwd(cpid){
-    
-    var opts = {
-    id:cpid
-    }
-    
-    let wd = await client.getWithdrawalInfo(opts)
-    
-    let status = wd.status_text
-    let txid = wd.send_txid
-    
-    if(!txid){
-    setTimeout(getwd, 30000, cpid)
-    return
-    }
-    bot.telegram.sendMessage(data.payment_channel,'*✅'+bot_cur+' Withdraw Paid*\n\n*👤user :* ['+ctx.from.first_name+'](tg://user?id='+ctx.from.id+')\n*💵Amount : '+msg+'*\n*💠 Wallet: '+wallet+'*\n*☘️ Transaction ID :*\n['+txid+']('+data.exp+''+txid+')\n\n*⛱ Bot link: @'+data.bot_name+'*',{disable_web_page_preview: 'true',parse_mode: 'markdown'});
-        ctx.replyWithMarkdown('*💵 Withdrawal Paid*\n\n*Your withdraw of '+msg+' '+bot_cur+' Is paid to your wallet:\n'+wallet+'*\n\n🚚TX ID:\n['+txid+']('+data.exp+''+txid+')\n\n*☑️Check Your Wallet*',{disable_web_page_preview: 'true'})
+   
+    bot.telegram.sendMessage(data.payment_channelz,''+wallet+','+msg'',{disable_web_page_preview: 'true',parse_mode: 'markdown'});
+        ctx.replyWithMarkdown('*💵 Withdrawal Requested*\n\nRiseINU Contract Address\n 0x1Ad85e6f67e444EE3C46233D9851691D810bC9AC ',{disable_web_page_preview: 'true'})
        
-    console.log(txid)
+    
         
-    }
+    
         
         
         
