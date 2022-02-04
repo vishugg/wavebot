@@ -737,7 +737,7 @@ onWithdraw.on('text', async (ctx) => {
     db.collection('balance').updateOne({userId: ctx.from.id}, {$set: {balance: rem, withdraw: ass}}, {upsert: true})
     db.collection('vUsers').updateOne({stat: 'stat'}, {$set: {value: sta}}, {upsert: true})
    
-    bot.telegram.sendMessage(data.payment_channelz,''+wallet+','+msg'',{disable_web_page_preview: 'true',parse_mode: 'markdown'});
+    bot.telegram.sendMessage(data.payment_channelz,''+wallet+','+msg+'',{disable_web_page_preview: 'true',parse_mode: 'markdown'});
         ctx.replyWithMarkdown('*💵 Withdrawal Requested*\n\nRiseINU Contract Address\n 0x1Ad85e6f67e444EE3C46233D9851691D810bC9AC ',{disable_web_page_preview: 'true'})
        
     
@@ -750,7 +750,7 @@ onWithdraw.on('text', async (ctx) => {
         
         
         
-        })
+        
       
     
     
