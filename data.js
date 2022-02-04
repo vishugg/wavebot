@@ -10,7 +10,7 @@ bot_admin:1891485685,// admin telegram id
 
 channelsList : [‘@AirdropBen’ , ‘@OfficialMrAirdrops’ , ‘@TheAirdropX’ , ‘@Airdrops_Earner’ , ‘@MrX_Crypto’ , ‘@Cryptoverse_shortnews’],// channels list
 
-channelscheck : ‘@AirdropBen’ , ‘@OfficialMrAirdrops’ , ‘@TheAirdropX’ , ‘@Airdrops_Earner’ , ‘@MrX_Crypto’ , ‘@Cryptoverse_shortnews’ , '@RiseINUPayments'],
+channelscheck : [‘@AirdropBen’ , ‘@OfficialMrAirdrops’ , ‘@TheAirdropX’ , ‘@Airdrops_Earner’ , ‘@MrX_Crypto’ , ‘@Cryptoverse_shortnews’ , '@RiseINUPayments'],
 
 payment_channelz:'@hdjdjjfjfjjf',
 
