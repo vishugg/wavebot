@@ -2,7 +2,7 @@ module.exports = {
 
 mongoLink:'mongodb+srv://nft:vishu@paid1.qldpv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',//database link
 
-bot_token:'5182443040:AAG-AhJdvX3207uoqCX35PgXnoAyPQTCdQQ',//bot token
+bot_token:'5182443040:AAFdJzkOmT1B8-ux607Oz2GYDTEPHehV6iA',//bot token
 
 bot_name:'RiseINUAirdrop_bot',//bot username without @
 
