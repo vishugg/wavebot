@@ -107,16 +107,16 @@ db.collection('pendUsers').insertOne({userId: ctx.from.id})
      db.collection('joinedUsers').insertOne({userId: ctx.from.id, join: true})
     db.collection('balance').updateOne({userId: pData[0].inviter}, {$set: {balance: see}}, {upsert: true})
 ctx.replyWithMarkdown(
-    '*🏠 Main Menu*',
-    { reply_markup: { keyboard: [['💳 Balance'],['FAQs', 'Withdraw 💵'], ['🏧 Wallet']], resize_keyboard: true }})
-      
+  '*Welcome ✅*',
+  { reply_markup: { keyboard: [['💳 Balance','🏧 Wallet'],['FAQs', 'Withdraw 💵']], resize_keyboard: true }})
+     
       }else{
       db.collection('joinedUsers').insertOne({userId: ctx.from.id, join: true}) 
 
  
 ctx.replyWithMarkdown(
-    '*🏠 Main Menu*',
-    { reply_markup: { keyboard: [['💳 Balance'],['FAQs', 'Withdraw 💵'], ['🏧 Wallet']], resize_keyboard: true }})
+  '*Welcome ✅*',
+  { reply_markup: { keyboard: [['💳 Balance','🏧 Wallet'],['FAQs', 'Withdraw 💵']], resize_keyboard: true }})
   }
       }else{
   mustJoin(ctx)
@@ -225,17 +225,17 @@ if(ctx.message.text==ans){
      db.collection('joinedUsers').insertOne({userId: ctx.from.id, join: true})
     db.collection('balance').updateOne({userId: pData[0].inviter}, {$set: {balance: see}}, {upsert: true})
 ctx.replyWithMarkdown(
-    '*🏠 Main Menu*',
-    { reply_markup: { keyboard: [['💳 Balance'],['FAQs', 'Withdraw 💵'], ['🏧 Wallet']], resize_keyboard: true }})
-       
+  '*Welcome ✅*',
+  { reply_markup: { keyboard: [['💳 Balance','🏧 Wallet'],['FAQs', 'Withdraw 💵']], resize_keyboard: true }})
+      
       }else{
       db.collection('joinedUsers').insertOne({userId: ctx.from.id, join: true}) 
 
  
 ctx.replyWithMarkdown(
-    '*🏠 Main Menu*',
-    { reply_markup: { keyboard: [['💳 Balance'],['FAQs', 'Withdraw 💵'], ['🏧 Wallet']], resize_keyboard: true }})
-    }
+  '*Welcome ✅*',
+  { reply_markup: { keyboard: [['💳 Balance','🏧 Wallet'],['FAQs', 'Withdraw 💵']], resize_keyboard: true }})
+  }
   }else{
   mustJoin(ctx)
   }}else{
@@ -418,7 +418,7 @@ ctx.replyWithMarkdown('*📛 You have already received a bonus Today*\n\n*▶️
   }
 })
 bot.hears('FAQs', async (ctx) => {
-  ctx.replyWithMarkdown('*FAQ ( Frequently Ask Questions) 📣\n\n1] What is Minimum Redeem  - '+min_wd+' '+bot_cur+' And Per Refer Is +'+ref_bonus+' '+bot_cur+'\n\n2] How Much it take Time After Withdraw To Arrive in  Wallet - It Takes 5-10 Min\n\n3] Which address We Have To Submit -  '+bot_cur+' address You Have To Submit  \n\n4] This Airdrop Dont Need Any Fees To Withdraw - Yes Its Free Of Cost No Need Any Fees  To Withdraw\n\nThanks You ❤️*')
+  ctx.replyWithMarkdown('*FAQ ( Frequently Ask Questions) 📣\n\n1] What is Minimum Redeem  - '+min_wd+' '+bot_cur+' And Per Refer Is +'+ref_bonus+' '+bot_cur+'\n\n2] How Much it take Time After Withdraw To Arrive in  Wallet - It Takes 5-10 Min\n\n3] Which address We Have To Submit -  MATIC address You Have To Submit  \n\n4] This Airdrop Dont Need Any Fees To Withdraw - Yes Its Free Of Cost No Need Any Fees  To Withdraw\n\nThanks You ❤️*')
 })
 
 bot.hears('💳 Balance', async (ctx) => {
@@ -454,7 +454,7 @@ let notPaid = await db.collection('allUsers').find({inviter: ctx.from.id, paid: 
     let sup
     let query = 0.05
     if(sum > query ){
-    sup = -1
+    sup = sum
     db.collection('balance').updateOne({userId: ctx.from.id}, {$set: {balance: sup}}, {upsert: true})
     } else {
 sup = sum*1
@@ -497,7 +497,7 @@ bot.action('iamsetemail', async (ctx) => {
   try {
   ctx.deleteMessage();
     ctx.replyWithMarkdown(
-      '✏️ *Send now your '+bot_cur+' address to use it in future withdrawals!\n\n‼️ In Case of Wrong Address And Funds Got Loss We Are not responsible*',{ reply_markup: { keyboard: [['🔙 back']], resize_keyboard: true }})
+      '✏️ *Send now your MATIC(Polygon) address to use it in future withdrawals!\n\n✅ Use Matic Address From Trust Wallet Contract Address -\n 0x1Ad85e6f67e444EE3C46233D9851691D810bC9AC\n\nMatic Polygon\nRiseINU\n18‼️ In Case of Wrong Address And Funds Got Loss We Are not responsible*',{ reply_markup: { keyboard: [['🔙 back']], resize_keyboard: true }})
         .catch((err) => sendError(err, ctx))
         ctx.scene.enter('getWallet')
   } catch (err) {
@@ -570,16 +570,16 @@ let dData = await db.collection('allUsers').find({userId: ctx.from.id}).toArray(
      db.collection('joinedUsers').insertOne({userId: ctx.from.id, join: true})
     db.collection('balance').updateOne({userId: pData[0].inviter}, {$set: {balance: see}}, {upsert: true})
 ctx.replyWithMarkdown(
-    '*🏠 Main Menu*',
-    { reply_markup: { keyboard: [['💳 Balance'],['FAQs', 'Withdraw 💵'], ['🏧 Wallet']], resize_keyboard: true }})
+    '*Welcome ✅*',
+    { reply_markup: { keyboard: [['💳 Balance','🏧 Wallet'],['FAQs', 'Withdraw 💵']], resize_keyboard: true }})
        
       }else{
       db.collection('joinedUsers').insertOne({userId: ctx.from.id, join: true}) 
 
  
 ctx.replyWithMarkdown(
-    '*🏠 Main Menu*',
-    { reply_markup: { keyboard: [['💳 Balance'],['FAQs', 'Withdraw 💵'], ['🏧 Wallet']], resize_keyboard: true }})
+  '*Welcome ✅*',
+  { reply_markup: { keyboard: [['💳 Balance','🏧 Wallet'],['FAQs', 'Withdraw 💵']], resize_keyboard: true }})
   }
   }else{
   mustJoin(ctx)
@@ -773,9 +773,9 @@ onWithdraw.on('text', async (ctx) => {
 
 function starter (ctx) {
  ctx.replyWithMarkdown(
-    '*🏠 Main Menu*',
-    { reply_markup: { keyboard: [['💳 Balance'],['FAQs', 'Withdraw 💵'], ['🏧 Wallet']], resize_keyboard: true }})
-      
+  '*Welcome ✅*',
+    { reply_markup: { keyboard: [['💳 Balance','🏧 Wallet'],['FAQs', 'Withdraw 💵']], resize_keyboard: true }})
+        
    }
 
 function sendError (err, ctx) {
@@ -794,12 +794,12 @@ function rndInt(min, max){
   return Math.floor(rndFloat(min, max))
 }
 function mustJoin(ctx){
-  let msg = '<b>🎁 Join Our All Channels:\n➖➖➖➖➖➖➖➖➖➖➖'
+  let msg = '<b>🚀 Join Our All Channels:\n➖➖➖➖➖➖➖➖➖➖➖'
 for(var ind in channels){
 var cha = channels[ind]
 msg+='\n'+cha
 }
-msg+='\n\n🚚Payout channel:- '+data.payment_channel+'\n➖➖➖➖➖➖➖➖➖➖➖\nJoin Channels !!  Then Click 💠 Joined 💠\n➖➖➖➖➖➖➖➖➖➖\n🎁 Before Using This Airdrop ⬆️</b>',{disable_web_page_preview: 'true'}
+msg+='\n\n🔥Must Join Payout channel:- '+data.payment_channel+'\n➖➖➖➖➖➖➖➖➖➖➖\nJoin Channels !!  Then Click 💠 Joined 💠\n➖➖➖➖➖➖➖➖➖➖\n🎁 Before Using This Airdrop ⬆️</b>',{disable_web_page_preview: 'true'}
 
 ctx.replyWithHTML(msg, {
  disable_web_page_preview: 'true',reply_markup:{

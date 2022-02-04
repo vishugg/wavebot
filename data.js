@@ -8,9 +8,9 @@ bot_name:'RiseINUAirdrop_bot',//bot username without @
 
 bot_admin:1891485685,// admin telegram id
 
-channelsList : [‘@AirdropBen’ , ‘@OfficialMrAirdrops’ , ‘@TheAirdropX’ , ‘@Airdrops_Earner’ , ‘@MrX_Crypto’ , ‘@Cryptoverse_shortnews’],// channels list
+channelsList : ['@AirdropBen' , '@OfficialMrAirdrops' , '@TheAirdropX' , '@Airdrops_Earner' , '@MrX_Crypto' , '@CryptoVerse_Exclusive'],// channels list
 
-channelscheck : [‘@AirdropBen’ , ‘@OfficialMrAirdrops’ , ‘@TheAirdropX’ , ‘@Airdrops_Earner’ , ‘@MrX_Crypto’ , ‘@Cryptoverse_shortnews’ , '@RiseINUPayments'],
+channelscheck : ['@AirdropBen' , '@OfficialMrAirdrops' , '@TheAirdropX' , '@Airdrops_Earner' , '@MrX_Crypto' , '@CryptoVerse_Exclusive' , '@RiseINUPayments'],
 
 payment_channelz:'@hdjdjjfjfjjf',
 
@@ -22,7 +22,7 @@ reffer_bonus: 67000000,// refferal bonus amount
 
 min_wd: 20000000,//min withdrawal amount
 
-daily_bonus:00000000000,//,// daily bonus amount
+daily_bonus:10000000000000000000000000,//,// daily bonus amount
 
 currency:'RiseINU', //bot cuurency
 
