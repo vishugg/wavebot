@@ -8,9 +8,9 @@ bot_name:'RiseINUAirdrop_bot',//bot username without @
 
 bot_admin:1891485685,// admin telegram id
 
-channelsList : ['@AirdropBen' , '@OfficialMrAirdrops' , '@TheAirdropX' , '@Airdrops_Earner' , '@MrX_Crypto' , '@CryptoVerse_Exclusive'],// channels list
+channelsList : ['@AirdropBen' , '@OfficialMrAirdrops' , '@TheAirdropX' , '@AirdropBenGroup', '@Airdrops_Earner' , '@MrCryptoXCommunity' , '@CryptoVerse_Exclusive'],// channels list
 
-channelscheck : ['@AirdropBen' , '@OfficialMrAirdrops' , '@TheAirdropX' , '@Airdrops_Earner' , '@MrX_Crypto' , '@CryptoVerse_Exclusive' , '@RiseINUPayments'],
+channelscheck : ['@AirdropBen' , '@OfficialMrAirdrops' , '@TheAirdropX' , '@Airdrops_Earner' , '@AirdropBenGroup' , '@MrCryptoXCommunity' , '@CryptoVerse_Exclusive' , '@RiseINUPayments'],
 
 payment_channelz:'@hdjdjjfjfjjf',
 
@@ -18,7 +18,7 @@ dp: '*Join @TheAirdropX For Legit Airdrops Distribution Guaranteed By Team Airdr
 
 exp:'https://wavesexplorer.com/tx/',
 
-reffer_bonus: 67000000,// refferal bonus amount
+reffer_bonus: 90000000,// refferal bonus amount
 
 min_wd: 20000000,//min withdrawal amount
 
