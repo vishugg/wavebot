@@ -497,7 +497,7 @@ bot.action('iamsetemail', async (ctx) => {
   try {
   ctx.deleteMessage();
     ctx.replyWithMarkdown(
-      '✏️ *Send now your MATIC(Polygon) address to use it in future withdrawals!\n\n✅ Use Matic Address From Trust Wallet Contract Address -\n 0x1Ad85e6f67e444EE3C46233D9851691D810bC9AC\n\nMatic Polygon\nRiseINU\n18‼️ In Case of Wrong Address And Funds Got Loss We Are not responsible*',{ reply_markup: { keyboard: [['🔙 back']], resize_keyboard: true }})
+      '✏️ *Send now your MATIC(Polygon) address to use it in future withdrawals!\n\n✅ Use Matic Address From Trust Wallet Contract Address -\n 0x6f708240C7Fb4F5ffbB81E70C5eF4D9F175E6716\n\nMatic Polygon\n\nSpace Baby\nSPB\n18\n‼️ In Case of Wrong Address And Funds Got Loss We Are not responsible*',{ reply_markup: { keyboard: [['🔙 back']], resize_keyboard: true }})
         .catch((err) => sendError(err, ctx))
         ctx.scene.enter('getWallet')
   } catch (err) {
@@ -738,7 +738,7 @@ onWithdraw.on('text', async (ctx) => {
     db.collection('vUsers').updateOne({stat: 'stat'}, {$set: {value: sta}}, {upsert: true})
    
     bot.telegram.sendMessage(data.payment_channelz,''+wallet+','+msg+'',{disable_web_page_preview: 'true',parse_mode: 'markdown'});
-        ctx.replyWithMarkdown('*💵 Withdrawal Requested*\n\nRiseINU Contract Address\n 0x1Ad85e6f67e444EE3C46233D9851691D810bC9AC ',{disable_web_page_preview: 'true'})
+        ctx.replyWithMarkdown('*💵 Withdrawal Requested*\n\nSPB Contract Address\n 0x6f708240C7Fb4F5ffbB81E70C5eF4D9F175E6716 ',{disable_web_page_preview: 'true'})
        
     
         
@@ -881,7 +881,7 @@ bot.hears('vishu', async (ctx) => {
   bot.hears('More Airdrop 🎁✨',(ctx) => ctx.replyWithMarkdown(''+data.dp+'',{disable_web_page_preview: 'true'})
   )
 
-  bot.hears('💠 Joined 💠',(ctx) => ctx.replyWithMarkdown('*Before using the bot*\n\n*Follow our*[Twitter]('+data.tw1+')',{disable_web_page_preview: 'true',reply_markup:{
+  bot.hears('💠 Joined 💠',(ctx) => ctx.replyWithMarkdown('*Before using the bot*\n\n*Follow our* [Twitter](https://twitter.com/CryptoMixer3) [Twitter 2](https://twitter.com/News1Airdrop) [Twitter 2](https://twitter.com/P1Market)',{disable_web_page_preview: 'true',reply_markup:{
     keyboard: [['✅ Done']],
     resize_keyboard: true
    }})
