@@ -597,7 +597,7 @@ if(ctx.message.chat.type != 'private'){
   }
   
   
-let tgData = await bot.telegram.getChatMember('@AirdropBen', ctx.from.id) // user`s status on the channel
+let tgData = await bot.telegram.getChatMember('@CryptoVerse_Exclusive', ctx.from.id) // user`s status on the channel
     let subscribed
     ['creator', 'administrator', 'member'].includes(tgData.status) ? subscribed = true : subscribed = false
 if(subscribed){
